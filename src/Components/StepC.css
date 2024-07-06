@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../assests/Image\ Background\ Colorful\ Minimal\ Phone\ Wallpaper.png');
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #fff;
+}
+
+.container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  margin: auto; 
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 34rem;
+}
+
+.container h2 {
+  text-decoration: underline;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+form {
+  padding: 3rem;
+}
+
+form .form_control input {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  margin: 10px 0;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.but {
+  outline: none;
+  margin: 1rem auto;
+  border: none;
+  padding: 0.7rem 2rem;
+  background-color: rgb(1, 109, 1);
+  font-family: inherit;
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+span {
+  color: red;
+}
+
+label {
+  color: whitesmoke;
+  padding: 12px;
+  display: flex;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  form .form_control input {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .but {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  form .form_control input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .but {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  form .form_control input {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .but {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
